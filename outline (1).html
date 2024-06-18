@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: "빅누들";
+            src: url(font/big_noodle_titling.ttf);
+        }
+
+        @font-face {
+            font-family: "오블리크";
+            src: url(font/big_noodle_titling_oblique.ttf);
+        }
+
+        @font-face {
+            font-family: "코버워치";
+            src: url(font/koverwatch.ttf);
+        }
+    </style>
+    <link rel="stylesheet" href="css/outline.css" />
+    <link rel="stylesheet" href="css/navMenu.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="header">
+            <div class="top-bar-wrap">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/ds_outline_nintendo_logo.png" alt="" /></a>
+                </div>
+            </div>
+        </header>
+        <nav class="nav_menu">
+            <div class="real_menu" >
+                <div class="btn"></div>
+                <img src="img/nav_open.png" alt="메뉴펼치기">
+                <ul>
+                    <li><a href="">개요</a></li>
+                    <li><a href="">영웅</a></li>
+                    <li><a href="">전장</a></li>
+                    <li><a href="">E_SHOP</a></li>
+                    <li><a href="">만화</a></li>
+                </ul>
+
+            </div>
+            <img class="nav_close" src="img/nav_close.png" alt="네비게이션메뉴">
+        </nav>
+        <section>
+            <article class="outline">
+                <div class="video_box">
+                    <video src="vdo/outline_F2P_Trailer_mainBanner.mp4" autoplay muted loop></video>
+                    <div class="video_text_box">
+                        <h3><em>쟁취할 가치가 있는 미래</em></h3>
+                        <p>팀 기반 액션 ㅣ 무료 플레이</p>
+                        <div class="video_btn">
+                            <a href="#">지금 플레이</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overwatch_logo">
+                    <img src="img/ds_outline_Overwatch2_Logo.webp" alt="" />
+                </div>
+
+                <div class="outline_content_imgBox">
+                    <img src="img/ds_eShop_fixedBgi.jpg" alt="" />
+                    <img src="img/ds_outline_silver_backgound.png" alt="" />
+                    <div class="outline_content_box">
+                        <div class="outline_content_intro">
+                            <div class="intro_left_box">
+                                <h4>
+                                    평단의 극찬을 받은 영웅<br />
+                                    액션 슈팅 게임
+                                </h4>
+                                <p class="intro_left_box_text1">
+                                    오버워치 2는 무료 플레이 가능한 슈팅 게임으로,<br />
+                                    30명이 넘는 개성 있는 영웅과 전세를 뒤집는<br />
+                                    능력을 만나볼 수 있습니다. 영웅을 선택하고<br />
+                                    친구들과 팀을 이뤄 색다른 전장과 모드에서 <br />궁극의 팀
+                                    기반 슈팅 게임을 플레이하세요.
+                                </p>
+                                <p class="intro_left_box_text2">
+                                    오버워치 2는 무료 플레이 가능한<br />
+                                    슈팅 게임으로 30명이 넘는 개성 있는 <br />영웅과 전세를
+                                    뒤집는 능력을<br />
+                                    만나볼 수 있습니다. 영웅을 선택하고 친구들과<br />
+                                    팀을 이뤄 색다른 전장과 모드에서<br />
+                                    궁극의 팀 기반 슈팅 게임을 플레이하세요.
+                                </p>
+                            </div>
+                            <div class="intro_right_box">
+                                <img src="img/ds_outline_Game_Overview_Thumbnail.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game_characteristic">
+                    <div class="game_characteristic_bg_box">
+                        <img src="img/ds_outline_ashe-01.png" alt="" />
+                        <img src="img/ds_outline_groupPhoto.jpeg" alt="" />
+                    </div>
+                    <div class="game_characteristic_text1">
+                        <h4>게임 특징</h4>
+                        <p>
+                            수십 개의 전장과 다채로운 게임 방식을 자랑하는 오버워치 2의
+                            모든<br />
+                            요소를 친구들과 팀을 이뤄 즐겨보세요.
+                        </p>
+                        <ul class="game_characteristic_icon">
+                            <li>
+                                <img src="img/ds_outline_Icon4_.png" alt="" />
+                                <p>새로운 영웅</p>
+                            </li>
+                            <li>
+                                <img src="img/ds_outline_Icon2_.png" alt="" />
+                                <p>
+                                    세계 곳곳에서<br />
+                                    벌어지는 전투
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/ds_outline_Icon3_.png" alt="" />
+                                <p>
+                                    크로스플레이<br />
+                                    및 진행 데이터<br />
+                                    동기화
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/ds_outline_Icon5_.png" alt="" />
+                                <p>이야기 임무</p>
+                            </li>
+                            <li>
+                                <img src="img/ds_outline_Icon1_.png" alt="" />
+                                <p>무료 플레이</p>
+                            </li>
+                        </ul>
+                        <h5>새로운 영웅들</h5>
+                        <p class="text">
+                            개성 넘치는 새로운 영웅이 계속해서 합류합니다.<br />
+                            모두를 위한 새로운 영웅이 준비되어 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="now_play_box">
+                        <div class="now_play_bg">
+                            <img src="img/ds_outline_moira_2.png" alt="" />
+                        </div>
+                        <div class="now_play_line">
+                            <img src="img/ds_outline_line.png" alt="" />
+                        </div>
+                        <div class="now_play_content">
+                            <div class="now_img_wrap">
+                                <div class="now_play_img_box">
+                                    <div class="now_play_left_box">
+                                        <img src="img/ds_outline_howToPlay_01.png" alt="" />
+                                    </div>
+                                    <div class="now_play_right_box">
+                                        <img src="img/ds_outline_howToPlay_02.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="now_play_btn"><a href="#">지금 플레이 하기</a></div>
+                        </div>
+                    </div>
+                    <div class="go_map_box">
+                        <div class="go_map_bg">
+                            <img src="img/ds_outline_withTeam.jpg" alt="" />
+                        </div>
+                        <div class="go_map_text">
+                            <p>
+                                팀을 이뤄 <br />
+                                전장에 뛰어드세요
+                            </p>
+                        </div>
+                        <div class="go_map_btn">
+                            <a href="#">지금 바로 플레이하세요</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="js/nav_menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "빅누들";
+        src: url(font/big_noodle_titling.ttf);
+      }
+
+      @font-face {
+        font-family: "오블리크";
+        src: url(font/big_noodle_titling_oblique.ttf);
+      }
+      @font-face {
+        font-family: "코버워치";
+        src: url(font/koverwatch.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/hero_.css" />
+    <link rel="stylesheet" href="css/index_hero_.css" />
+  </head>
+  <body>
+    <div class="section-group section-group--1">
+      <section class="section section--1">섹션1</section>
+      <section class="section section--2">섹션2</section>
+    </div>
+
+    <div
+      id="hero-group"
+      class="section-group section-group--horizontal section-group--2"
+    >
+      <!-- <section class="section section--6">섹션6</section> -->
+      <section class="section section--7">
+        <div id="characterWrap">
+          <div id="heroTextBox">
+            <img src="img/0_hero_title2.png" alt="" />
+          </div>
+          <div id="characterScroll">
+            <div id="cassidiy" class="hero_box">
+              <img
+                class="hero_img"
+                src="img/6_full_cassidiy_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="cassidiy_flower_bg" class="flower_bg_box">
+              <img
+                class="hero_bg flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="cassidiy_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_Cassidy_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="cassidiy_bg" class="hero_bg_box">
+              <img class="hero_bg" src="img/7_cassidy_bg.png" alt="" />
+            </div>
+            <div id="cassidiy_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_cassdiy.png" alt="" />
+            </div>
+            <div id="cassidiy_sticker" class="sticker">
+              <img src="img/ds_st_13.png" alt="" />
+            </div>
+
+            <div id="genji" class="hero_box">
+              <img class="hero_img" src="img/6_full_genzi.png" alt="" />
+            </div>
+            <div id="genji_flower_bg" class="genji_flower_bg_box">
+              <img
+                class="hero_bg flower_bg genji_flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="genji_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_genji_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="genji_bg" class="hero_bg_box">
+              <img
+                class="hero_bg hero_bg_genji"
+                src="img/7_genji_bg.png"
+                alt=""
+              />
+            </div>
+            <div id="genji_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_genji.png" alt="" />
+            </div>
+            <div id="genji_sticker" class="sticker">
+              <img src="img/ds_st_10.png" alt="" />
+            </div>
+
+            <div id="reinharts" class="big">
+              <img class="hero_img" src="img/6_full_reinharts.png" alt="" />
+            </div>
+            <div id="reinharts_flower_bg" class="reinharts_flower_bg_box">
+              <img
+                class="hero_bg flower_bg reinharts_flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="reinharts_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_line_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="reinharts_bg" class="hero_bg_box">
+              <img
+                class="hero_bg hero_bg_genji"
+                src="img/7_line_bg.png"
+                alt=""
+              />
+            </div>
+            <div id="reinharts_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_line.png" alt="" />
+            </div>
+            <div id="reinharts_sticker" class="sticker">
+              <img src="img/ds_st_6.png" alt="" />
+            </div>
+
+            <div id="kiriko" class="hero_box kiriko_box">
+              <img class="hero_img" src="img/6_full_kiriko.png" alt="" />
+            </div>
+            <div id="kiriko_flower_bg" class="kiriko_flower_bg_box">
+              <img
+                class="hero_bg flower_bg reinharts_flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="kiriko_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_Kiroko_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="kiriko_bg" class="hero_bg_box">
+              <img
+                class="hero_bg hero_bg_genji"
+                src="img/7_kiriko_bg.png"
+                alt=""
+              />
+            </div>
+            <div id="kiriko_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_kiriko.png" alt="" />
+            </div>
+            <div id="kiriko_sticker" class="sticker">
+              <img src="img/ds_st_4.png" alt="" />
+            </div>
+
+            <div id="winston" class="hero_box kiriko_box">
+              <img class="hero_img" src="img/6_full_winston.png" alt="" />
+            </div>
+            <div id="winston_flower_bg" class="winston_flower_bg_box">
+              <img
+                class="hero_bg flower_bg winston_flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="winston_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_winston_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="winston_bg" class="hero_bg_box">
+              <img
+                class="hero_bg hero_bg_winston"
+                src="img/7_winstion_bg.png"
+                alt=""
+              />
+            </div>
+            <div id="winston_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_win.png" alt="" />
+            </div>
+            <div id="winston_sticker" class="sticker">
+              <img src="img/ds_st_14.png" alt="" />
+            </div>
+
+            <div id="lifewever" class="hero_box kiriko_box">
+              <img class="hero_img" src="img/6_full_lifewiver.png" alt="" />
+            </div>
+            <div id="lifewever_flower_bg" class="lifewever_flower_bg_box">
+              <img
+                class="hero_bg flower_bg lifewever_flower_bg"
+                src="img/7_dotFlower_resize.png"
+                alt=""
+              />
+            </div>
+            <div id="lifewever_vdo">
+              <video
+                width="105%"
+                height="105%"
+                src="vdo/5_lifewever_banner_vdo.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <div id="lifewever_bg" class="hero_bg_box">
+              <img
+                class="hero_bg hero_bg_lifewever"
+                src="img/7_lifewever_bg.png"
+                alt=""
+              />
+            </div>
+            <div id="lifewever_cute" class="hero_cute_box">
+              <img class="hero_bg" src="img/5_cute_life.png" alt="" />
+            </div>
+            <div id="lifewever_sticker" class="sticker">
+              <img src="img/ds_st_16.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section8" class="section section8">
+        <div class="section8_content_box">
+          <!-- <img src="img/0_overwatch_group.jpg" alt="" /> -->
+          <div class="sticker_box">
+            <img src="img/ds_hero_sol.png" alt="" />
+
+            <img src="img/ds_hero_junk.png" alt="" />
+            <img src="img/ds_hero_hanzo.png" alt="" />
+            <img src="img/ds_hero_widow.png" alt="" />
+            <img src="img/ds_hero_marcy.png" alt="" />
+            <img src="img/ds_st_12.png" alt="" />
+            <img src="img/ds_st_15.png" alt="" />
+            <img src="img/ds_st_11.png" alt="" />
+            <img src="img/ds_st_9.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section section--10">섹션10</section> -->
+    </div>
+
+    <section class="section section11">
+      <div class="section11_img_box">
+        <img src="img/0_overwatch_group.jpg" alt="" />
+      </div>
+      <div class="section11_text_box">
+        <p>더 많은 영웅들을 만나보세요</p>
+        <div class="section11_text_btn">
+          <a href="hero200.html">영웅 더 보러가기</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/hero.js"></script>
+  </body>
+</html>

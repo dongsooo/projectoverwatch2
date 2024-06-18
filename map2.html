@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "빅누들";
+        src: url(font/big_noodle_titling.ttf);
+      }
+
+      @font-face {
+        font-family: "오블리크";
+        src: url(font/big_noodle_titling_oblique.ttf);
+      }
+      @font-face {
+        font-family: "코버워치";
+        src: url(font/koverwatch.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/map2.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <article class="map">
+        <div class="map_bg_box"></div>
+        <div class="map_waveImg_box">
+          <img src="img/ds_map_wave.png" alt="" />
+        </div>
+        <div class="map_content">
+          <div class="map_text">
+            <h3>전장</h3>
+            <p>
+              지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요.
+              신기한 첨단 기술의<br />
+              도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할
+              목표, 밝혀낼 비밀,<br />
+              연구할 전략이 숨겨져 있습니다.
+            </p>
+          </div>
+          <div class="map_content_box">
+            <ul>
+              <li>
+                <video
+                  src="vdo/map_Blizzard Worl.mp4"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+                <p>블리자드 월드</p>
+              </li>
+              <li>
+                <video src="vdo/map_Busan.mp4" autoplay muted loop></video>
+                <p>대한민국 부산</p>
+              </li>
+              <li>
+                <video src="vdo/map_Ihilbande.mp4" autoplay muted loop></video>
+                <p>아이헨발데</p>
+              </li>
+              <li>
+                <video src="vdo/map_Oasis.mp4" autoplay muted loop></video>
+                <p>오아시스</p>
+              </li>
+              <li>
+                <video src="vdo/map_paris.mp4" autoplay muted loop></video>
+                <p>프랑스 파리</p>
+              </li>
+            </ul>
+            <div class="left_btn">
+              <img src="img/ds_map_left2.png" alt="" />
+            </div>
+            <div class="right_btn">
+              <img src="img/ds_map_right2.png" alt="" />
+            </div>
+          </div>
+          <div class="map_blank"></div>
+        </div>
+      </article>
+    </div>
+    <script src="js/map2.js"></script>
+  </body>
+</html>

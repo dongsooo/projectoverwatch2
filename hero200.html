@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OVERWATCH 2</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @font-face {
+        font-family: "빅누들";
+        src: url(font/big_noodle_titling.ttf);
+      }
+
+      @font-face {
+        font-family: "오블리크";
+        src: url(font/big_noodle_titling_oblique.ttf);
+      }
+
+      @font-face {
+        font-family: "코버워치";
+        src: url(font/koverwatch.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/hero200.css" />
+    <link rel="stylesheet" href="css/outline.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navMenu.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header class="header">
+        <div class="top-bar-wrap">
+          <div class="logo">
+            <a href="#">
+              <img src="img/ds_outline_nintendo_logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </header>
+      <nav class="nav_menu">
+        <div class="real_menu">
+          <div class="btn"></div>
+          <img src="img/nav_open.png" alt="메뉴펼치기" />
+          <ul>
+            <li><a href="index.html">개요</a></li>
+            <li><a href="index.html">영웅</a></li>
+            <li><a href="index.html">전장</a></li>
+            <li><a href="index.html">E_SHOP</a></li>
+            <li><a href="index.html">만화</a></li>
+          </ul>
+        </div>
+        <img class="nav_close" src="img/nav_close.png" alt="네비게이션메뉴" />
+      </nav>
+      <section class="hero_detail">
+        <article>
+          <div id="fiximg"><img src="img/01_fixedBgi.jpg" alt="" /></div>
+          <div id="banner">
+            <img src="img/02_heroBgi.jpg" alt="" />
+            <h2>영웅</h2>
+          </div>
+        </article>
+        <article>
+          <div id="btn">
+            <ul>
+              <li><a href="">모두</a></li>
+              <li><a href="">돌격</a></li>
+              <li><a href="">공격</a></li>
+              <li><a href="">지원</a></li>
+            </ul>
+            <p>
+              오버워치에는 독특한 개성과 배경 이야기를 지닌 다양한 영웅이
+              있습니다.<br />오버워치의 모든 영웅을 만나보십시오.
+            </p>
+          </div>
+        </article>
+        <article class="home">
+          <ul class="hero">
+            <li>
+              <a href="call_cassidy.html"
+                ><img src="img/cassidy.png" alt="" /><span>캐서디</span></a
+              >
+            </li>
+            <li>
+              <a href=""><img src="img/doom.png" alt="" /><span>둠</span></a>
+            </li>
+            <li>
+              <a href=""><img src="img/genji.png" alt="" /><span>겐지</span></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/junk.png" alt="" /><span>정크렛</span></a
+              >
+            </li>
+            <li>
+              <a href="kiriko.html"
+                ><img src="img/kirko.png" alt="" /><span>키리코</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/life.png" alt="" /><span>라이프위버</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/mercy.png" alt="" /><span>메르시</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/moira.png" alt="" /><span>모이라</span></a
+              >
+            </li>
+            <li>
+              <a href="rein_hardt.html"
+                ><img src="img/rein.png" alt="" /><span>라인하르트</span></a
+              >
+            </li>
+            <li>
+              <a href=""><img src="img/sol.png" alt="" /><span>솔져</span></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/tracer.png" alt="" /><span>트레이서</span></a
+              >
+            </li>
+            <li>
+              <a href=""><img src="img/win.png" alt="" /><span>윈스턴</span></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/wrekingball.png" alt="" /><span>레킹볼</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/zaria.png" alt="" /><span>자리야</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="img/zenyata.png" alt="" /><span>젠야타</span></a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <footer class="footer">
+        <!-- <div class="footer_bg_box">
+          <img src="img/ds_footer_footerbgi.png" alt="" />
+        </div> -->
+        <!-- <div class="footer_blank"></div> -->
+        <div class="footer_top_box">
+          <div class="footer_left_box">
+            <div class="footer_top_img">
+              <img src="img/ds_footer_blizzard_logo.png" alt="" />
+            </div>
+            <div class="footer_top_text_fnb">
+              <p>
+                ©2024 Blizzard Entertainment, Inc<br />
+                여기서 언급된 다른 모든 상표는 각 소유권자들의 자산입니다.
+              </p>
+              <ul class="fnb">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">법률 관련 문서</a></li>
+                <li><a href="#">이용 약관</a></li>
+                <li><a href="#">쿠키정보 처리 방침</a></li>
+                <li><a href="#">쿠키설정</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right_box">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_twitter_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Facebook_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_reddit_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Instagram_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Youtube_logo.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <address class="address">
+          <small>
+            블리자드 엔터테인먼트 유한 회사<br />
+            주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br />
+            대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일:
+            <a href="#">websupport@blizzard.co.kr</a><br />
+            <a href="#">사업자 등록 번호: 211-87-49910</a> | 통신 판매업 신고
+            번호: 강남-6017호 | 사업자정보확인<br />
+            대표이사: 매리 아그네스 케틀러 | 개인정보 보호책임자: 이강호
+          </small>
+        </address>
+      </footer>
+    </div>
+    <script src="js/nav_menu.js"></script>
+  </body>
+</html>

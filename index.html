@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OVERWATCH 2</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/webtoon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      @font-face {
+        font-family: "빅누들";
+        src: url(font/big_noodle_titling.ttf);
+      }
+
+      @font-face {
+        font-family: "오블리크";
+        src: url(font/big_noodle_titling_oblique.ttf);
+      }
+      @font-face {
+        font-family: "코버워치";
+        src: url(font/koverwatch.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/outline.css" />
+    <link rel="stylesheet" href="css/map2.css" />
+    <link rel="stylesheet" href="css/eShop.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navMenu.css" />
+    <link rel="stylesheet" href="css/hero_.css" />
+    <link rel="stylesheet" href="css/hero200.css" />
+    <link rel="stylesheet" href="css/index_hero_.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/bottom_img_box.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header" class="header">
+        <div class="top-bar-wrap">
+          <div class="logo">
+            <a href="#">
+              <img src="img/ds_outline_nintendo_logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </header>
+      <nav class="nav_menu">
+        <div class="real_menu">
+          <div class="btn"></div>
+          <img src="img/nav_open.png" alt="메뉴펼치기" />
+          <ul>
+            <li><a href="#outline">개요</a></li>
+            <li><a href="hero200.html">영웅</a></li>
+            <li><a href="#map">전장</a></li>
+            <li><a href="#eShop">E_SHOP</a></li>
+            <li><a href="#webtoon">만화</a></li>
+          </ul>
+        </div>
+        <img class="nav_close" src="img/nav_close.png" alt="네비게이션메뉴" />
+      </nav>
+      <section>
+        <div class="popup_cover">
+          <div class="popup_close_btn"></div>
+          <div class="popup_content_wrap">
+            <div class="popup_text_box">
+              <div class="popup_logo_box">
+                <img src="img/ds_outline_Overwatch2_Logo.webp" alt="" />
+              </div>
+              <p>
+                오버워치 2는 닌텐도 스위치 뿐 아니라 다른 플랫폼에서도 플레이할
+                수 있습니다. 크로스플레이 및 진행 데이터 동기화를 통해 플랫폼에
+                관계없이 친구와 팀을 이루고 미래를 위한 전투에 합류할 수
+                있습니다.
+              </p>
+            </div>
+
+            <ul class="popup_top_content">
+              <li class="popup_top_box1 popup_top_box">
+                <img src="img/ds_popup_battle_net_logo.png" alt="" />
+                <p>Windows</p>
+              </li>
+              <li class="popup_top_box2 popup_top_box">
+                <img src="img/ds_popup_x-box_logo.png" alt="" />
+                <p>Xbox Series</p>
+              </li>
+              <li class="popup_top_box3 popup_top_box">
+                <img src="img/ds_popup_PS_logo.png" alt="" />
+                <p>PlayStation 5</p>
+              </li>
+            </ul>
+
+            <ul class="popup_bottom_content">
+              <li class="popup_bottom_box1 popup_bottom_box">
+                <img src="img/ds_popup_NS_logo.webp" alt="" />
+                <p>Nintendo Switch</p>
+              </li>
+              <li class="popup_bottom_box2 popup_bottom_box">
+                <img src="img/ds_popup_steam_logo.svg" alt="" />
+                <p>Windows</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article class="outline">
+          <div class="video_box">
+            <video
+              src="vdo/outline_F2P_Trailer_mainBanner.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+            <div class="video_text_box">
+              <h3><em>쟁취할 가치가 있는 미래</em></h3>
+              <p>팀 기반 액션 ㅣ 무료 플레이</p>
+              <div class="video_btn">
+                <a href="#">지금 플레이</a>
+              </div>
+            </div>
+          </div>
+          <div class="overwatch_logo">
+            <img src="img/ds_outline_Overwatch2_Logo.webp" alt="" />
+          </div>
+
+          <div class="outline_content_imgBox">
+            <img src="img/ds_eShop_fixedBgi.jpg" alt="" />
+            <img src="img/ds_outline_silver_backgound.png" alt="" />
+            <div class="outline_content_box">
+              <div class="outline_content_intro">
+                <div id="outline" class="intro_left_box">
+                  <h4>
+                    평단의 극찬을 받은 영웅<br />
+                    액션 슈팅 게임
+                  </h4>
+                  <p class="intro_left_box_text1">
+                    오버워치 2는 무료 플레이 가능한 슈팅 게임으로,<br />
+                    30명이 넘는 개성 있는 영웅과 전세를 뒤집는<br />
+                    능력을 만나볼 수 있습니다. 영웅을 선택하고<br />
+                    친구들과 팀을 이뤄 색다른 전장과 모드에서 <br />궁극의 팀
+                    기반 슈팅 게임을 플레이하세요.
+                  </p>
+                  <p class="intro_left_box_text2">
+                    오버워치 2는 무료 플레이 가능한<br />
+                    슈팅 게임으로 30명이 넘는 개성 있는 <br />영웅과 전세를
+                    뒤집는 능력을<br />
+                    만나볼 수 있습니다. 영웅을 선택하고 친구들과<br />
+                    팀을 이뤄 색다른 전장과 모드에서<br />
+                    궁극의 팀 기반 슈팅 게임을 플레이하세요.
+                  </p>
+                </div>
+                <div class="intro_right_box">
+                  <img
+                    src="img/ds_outline_Game_Overview_Thumbnail.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game_characteristic">
+            <div class="game_characteristic_bg_box">
+              <img src="img/ds_outline_ashe-01.png" alt="" />
+              <img src="img/ds_outline_groupPhoto.jpeg" alt="" />
+            </div>
+            <div class="game_characteristic_text1">
+              <h4>게임 특징</h4>
+              <p>
+                수십 개의 전장과 다채로운 게임 방식을 자랑하는 오버워치 2의
+                모든<br />
+                요소를 친구들과 팀을 이뤄 즐겨보세요.
+              </p>
+              <ul class="game_characteristic_icon">
+                <li>
+                  <img src="img/ds_outline_Icon4_.png" alt="" />
+                  <p>새로운 영웅</p>
+                </li>
+                <li>
+                  <img src="img/ds_outline_Icon2_.png" alt="" />
+                  <p>
+                    세계 곳곳에서<br />
+                    벌어지는 전투
+                  </p>
+                </li>
+                <li>
+                  <img src="img/ds_outline_Icon3_.png" alt="" />
+                  <p>
+                    크로스플레이<br />
+                    및 진행 데이터<br />
+                    동기화
+                  </p>
+                </li>
+                <li>
+                  <img src="img/ds_outline_Icon5_.png" alt="" />
+                  <p>이야기 임무</p>
+                </li>
+                <li>
+                  <img src="img/ds_outline_Icon1_.png" alt="" />
+                  <p>무료 플레이</p>
+                </li>
+              </ul>
+              <h5>새로운 영웅들</h5>
+              <p class="text">
+                개성 넘치는 새로운 영웅이 계속해서 합류합니다.<br />
+                모두를 위한 새로운 영웅이 준비되어 있습니다.
+              </p>
+            </div>
+
+            <div class="now_play_box">
+              <div class="now_play_bg">
+                <img src="img/ds_outline_moira_2.png" alt="" />
+              </div>
+              <div class="now_play_line">
+                <img src="img/ds_outline_line.png" alt="" />
+              </div>
+              <div class="now_play_content">
+                <div class="now_img_wrap">
+                  <div class="now_play_img_box">
+                    <div class="now_play_left_box">
+                      <img src="img/ds_outline_howToPlay_01.png" alt="" />
+                    </div>
+                    <div class="now_play_right_box">
+                      <img src="img/ds_outline_howToPlay_02.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="now_play_btn"><a href="#">지금 플레이 하기</a></div>
+              </div>
+            </div>
+            <div class="go_map_box">
+              <div class="go_map_bg">
+                <img src="img/ds_outline_withTeam.jpg" alt="" />
+              </div>
+              <div class="go_map_text">
+                <p>
+                  팀을 이뤄 <br />
+                  전장에 뛰어드세요
+                </p>
+              </div>
+              <div class="go_map_btn">
+                <a href="#">지금 바로 플레이하세요</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 영웅시작 -->
+
+        <div
+          id="hero-group"
+          class="section-group section-group--horizontal section-group--2"
+        >
+          <!-- <section class="section section--6">섹션6</section> -->
+          <section class="section section--7">
+            <div id="characterWrap">
+              <div id="heroTextBox">
+                <img src="img/0_hero_title2.png" alt="" />
+              </div>
+              <div id="characterScroll">
+                <div id="cassidiy" class="hero_box">
+                  <img
+                    class="hero_img"
+                    src="img/6_full_cassidiy_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="cassidiy_flower_bg" class="flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="cassidiy_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_Cassidy_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="cassidiy_bg" class="hero_bg_box">
+                  <img class="hero_bg" src="img/7_cassidy_bg.png" alt="" />
+                </div>
+                <div id="cassidiy_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_cassdiy.png" alt="" />
+                </div>
+                <div id="cassidiy_sticker" class="sticker">
+                  <img src="img/ds_st_13.png" alt="" />
+                </div>
+
+                <div id="genji" class="hero_box">
+                  <img class="hero_img" src="img/6_full_genzi.png" alt="" />
+                </div>
+                <div id="genji_flower_bg" class="genji_flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg genji_flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="genji_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_genji_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="genji_bg" class="hero_bg_box">
+                  <img
+                    class="hero_bg hero_bg_genji"
+                    src="img/7_genji_bg.png"
+                    alt=""
+                  />
+                </div>
+                <div id="genji_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_genji.png" alt="" />
+                </div>
+                <div id="genji_sticker" class="sticker">
+                  <img src="img/ds_st_10.png" alt="" />
+                </div>
+
+                <div id="reinharts" class="big">
+                  <img class="hero_img" src="img/6_full_reinharts.png" alt="" />
+                </div>
+                <div id="reinharts_flower_bg" class="reinharts_flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg reinharts_flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="reinharts_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_line_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="reinharts_bg" class="hero_bg_box">
+                  <img
+                    class="hero_bg hero_bg_genji"
+                    src="img/7_line_bg.png"
+                    alt=""
+                  />
+                </div>
+                <div id="reinharts_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_line.png" alt="" />
+                </div>
+                <div id="reinharts_sticker" class="sticker">
+                  <img src="img/ds_st_6.png" alt="" />
+                </div>
+
+                <div id="kiriko" class="hero_box kiriko_box">
+                  <img class="hero_img" src="img/6_full_kiriko.png" alt="" />
+                </div>
+                <div id="kiriko_flower_bg" class="kiriko_flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg reinharts_flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="kiriko_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_Kiroko_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="kiriko_bg" class="hero_bg_box">
+                  <img
+                    class="hero_bg hero_bg_genji"
+                    src="img/7_kiriko_bg.png"
+                    alt=""
+                  />
+                </div>
+                <div id="kiriko_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_kiriko.png" alt="" />
+                </div>
+                <div id="kiriko_sticker" class="sticker">
+                  <img src="img/ds_st_4.png" alt="" />
+                </div>
+
+                <div id="winston" class="hero_box kiriko_box">
+                  <img class="hero_img" src="img/6_full_winston.png" alt="" />
+                </div>
+                <div id="winston_flower_bg" class="winston_flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg winston_flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="winston_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_winston_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="winston_bg" class="hero_bg_box">
+                  <img
+                    class="hero_bg hero_bg_winston"
+                    src="img/7_winstion_bg.png"
+                    alt=""
+                  />
+                </div>
+                <div id="winston_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_win.png" alt="" />
+                </div>
+                <div id="winston_sticker" class="sticker">
+                  <img src="img/ds_st_14.png" alt="" />
+                </div>
+
+                <div id="lifewever" class="hero_box kiriko_box">
+                  <img class="hero_img" src="img/6_full_lifewiver.png" alt="" />
+                </div>
+                <div id="lifewever_flower_bg" class="lifewever_flower_bg_box">
+                  <img
+                    class="hero_bg flower_bg lifewever_flower_bg"
+                    src="img/7_dotFlower_resize.png"
+                    alt=""
+                  />
+                </div>
+                <div id="lifewever_vdo">
+                  <video
+                    width="105%"
+                    height="105%"
+                    src="vdo/5_lifewever_banner_vdo.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                </div>
+                <div id="lifewever_bg" class="hero_bg_box">
+                  <img
+                    class="hero_bg hero_bg_lifewever"
+                    src="img/7_lifewever_bg.png"
+                    alt=""
+                  />
+                </div>
+                <div id="lifewever_cute" class="hero_cute_box">
+                  <img class="hero_bg" src="img/5_cute_life.png" alt="" />
+                </div>
+                <div id="lifewever_sticker" class="sticker">
+                  <img src="img/ds_st_16.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section8" class="section section8">
+            <div class="section8_content_box">
+              <!-- <img src="img/0_overwatch_group.jpg" alt="" /> -->
+              <div class="sticker_box">
+                <img src="img/ds_hero_sol.png" alt="" />
+
+                <img src="img/ds_hero_junk.png" alt="" />
+                <img src="img/ds_hero_hanzo.png" alt="" />
+                <img src="img/ds_hero_widow.png" alt="" />
+                <img src="img/ds_hero_marcy.png" alt="" />
+                <img src="img/ds_st_12.png" alt="" />
+                <img src="img/ds_st_15.png" alt="" />
+                <img src="img/ds_st_11.png" alt="" />
+                <img src="img/ds_st_9.png" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <!-- <section class="section section--10">섹션10</section> -->
+        </div>
+
+        <section class="section section11">
+          <div class="section11_img_box">
+            <img src="img/0_overwatch_group.jpg" alt="" />
+          </div>
+          <div class="section11_text_box">
+            <p>더 많은 영웅들을 만나보세요</p>
+            <div class="section11_text_btn">
+              <a href="hero200.html">영웅 더 보러가기</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 전장시작 -->
+        <article id="map" class="map">
+          <div class="map_bg_box">
+            <img src="img/ds_map_zaria.png" alt="" />
+          </div>
+          <div class="map_waveImg_box">
+            <img src="img/ds_map_wave.png" alt="" />
+          </div>
+          <div class="map_content">
+            <div class="map_text">
+              <h3>전장</h3>
+              <p>
+                지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요.
+                신기한 첨단 기술의<br />
+                도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할
+                목표, 밝혀낼 비밀,<br />
+                연구할 전략이 숨겨져 있습니다.
+              </p>
+            </div>
+            <div class="map_content_box">
+              <ul>
+                <li>
+                  <video
+                    src="vdo/map_Blizzard Worl.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                  <p>블리자드 월드</p>
+                </li>
+                <li>
+                  <video src="vdo/map_Busan.mp4" autoplay muted loop></video>
+                  <p>대한민국 부산</p>
+                </li>
+                <li>
+                  <video
+                    src="vdo/map_Ihilbande.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
+                  <p>아이헨발데</p>
+                </li>
+                <li>
+                  <video src="vdo/map_Oasis.mp4" autoplay muted loop></video>
+                  <p>오아시스</p>
+                </li>
+                <li>
+                  <video src="vdo/map_paris.mp4" autoplay muted loop></video>
+                  <p>프랑스 파리</p>
+                </li>
+              </ul>
+              <div class="left_btn">
+                <img src="img/ds_map_left2.png" alt="" />
+              </div>
+              <div class="right_btn">
+                <img src="img/ds_map_right2.png" alt="" />
+              </div>
+            </div>
+            <div class="map_blank"></div>
+          </div>
+        </article>
+        <!-- 만화 시작 -->
+        <section id="webtoon" class="story">
+          <div class="art1">
+            <h2>만화 &amp; 단편 소설</h2>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href=""
+                  ><img src="img/KakaoTalk_20240516_150113688.png" alt=""
+                /></a>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/KakaoTalk_20240516_150202194.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/KakaoTalk_20240516_150242044.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/KakaoTalk_20240516_152344071.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/comic-newblood1-thumb-KR.jpeg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/OW_2.5_Final_KR-1.jpeg" alt="" />
+              </div>
+              <div class="swiper-slide"><img src="img/bas.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/cass.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/junk_.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/re.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/seam.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/junk2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/bati.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/ana.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/para2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/zarea.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/ana2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/doomn.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/wi.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/tre.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/sem2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/line.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/para.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/kriko.png" alt="" /></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div id="swiper-button-next" class="swiper-button-next"></div>
+            <div id="swiper-button-prev" class="swiper-button-prev"></div>
+            <!-- Add Scrollbar -->
+            <div id="swiper-scrollbar" class="swiper-scrollbar"></div>
+          </div>
+        </section>
+
+        <!-- eShop 시작 -->
+        <article id="eShop" class="eShop">
+          <div class="bg_box">
+            <img src="img/ds_eShop_fixedBgi.jpg" alt="" />
+          </div>
+          <div class="top_img">
+            <img src="img/ds_eShop_rainbow.png" alt="" />
+          </div>
+
+          <div class="eShop_content">
+            <div class="eShop_content_box">
+              <div class="eShop_left_box">
+                <div class="eShop_left_img">
+                  <img src="img/ds_eShop_poster.jpg" alt="" />
+                </div>
+                <div class="eShop_left_text">
+                  <p>오버워치2</p>
+                  <p>패키지 버전/다운로드 버전</p>
+                  <p>
+                    발매일 : 2024. 05. 21 (화)<br />
+                    희망소비자가격 : 64,800원
+                  </p>
+                  <div class="eShop_all_img">
+                    <img src="img/ds_eShop_allUser.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="eShop_right_box">
+                <div class="eShop_right_btn">
+                  <a href="#">상품 정보 바로가기</a>
+                </div>
+                <div class="eShop_play_text">
+                  <p>▶ 플레이 인원수 컨트롤러</p>
+                </div>
+                <div class="eShop_online">
+                  <div class="eShop_top">
+                    <img src="img/ds_eShop_product_online.png" alt="" />
+                  </div>
+                  <div class="eShop_bottom">
+                    <p>
+                      온라인 플레이를 이용하기 위해서는 「Nintendo Switch
+                      Online」의 가입이 필요합니다(유료)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eShop_bottom_content">
+              <div class="eShop_bottom_img_box">
+                <div class="eShop_bottom_left_box">
+                  <p class="OLED_model_text1">NINTENDO SWICH (OLED 모델)</p>
+                  <p class="OLED_model_text2">
+                    NINTENDO SWICH<br />
+                    (OLED 모델)
+                  </p>
+                  <p>오버워치2</p>
+                  <p>2024. 05. 21 (화) 발매</p>
+                </div>
+                <div class="eShop_bottom_right_box">
+                  <img src="img/ds_eShop_nintendo.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="eShop_cuteImg_Box">
+              <div class="eShop_textImg_box1 eShop_textImg_box">
+                <img
+                  class="hidden_text_img1"
+                  src="img/ds_eshop_text_img1.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img2"
+                  src="img/ds_eshop_text_img2.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img3"
+                  src="img/ds_eshop_text_img3.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img4"
+                  src="img/ds_eshop_text_img4.png"
+                  alt=""
+                />
+              </div>
+              <div class="eShop_textImg_box2 eShop_textImg_box">
+                <img
+                  class="hidden_text_img1"
+                  src="img/ds_eshop_text_img1.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img2"
+                  src="img/ds_eshop_text_img2.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img3"
+                  src="img/ds_eshop_text_img3.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img4"
+                  src="img/ds_eshop_text_img4.png"
+                  alt=""
+                />
+              </div>
+              <div class="eShop_textImg_box3 eShop_textImg_box">
+                <img
+                  class="hidden_text_img1"
+                  src="img/ds_eshop_text_img1.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img2"
+                  src="img/ds_eshop_text_img2.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img3"
+                  src="img/ds_eshop_text_img3.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img4"
+                  src="img/ds_eshop_text_img4.png"
+                  alt=""
+                />
+              </div>
+              <div class="eShop_textImg_box4 eShop_textImg_box">
+                <img
+                  class="hidden_text_img1"
+                  src="img/ds_eshop_text_img1.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img2"
+                  src="img/ds_eshop_text_img2.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img3"
+                  src="img/ds_eshop_text_img3.png"
+                  alt=""
+                />
+                <img
+                  class="hidden_text_img4"
+                  src="img/ds_eshop_text_img4.png"
+                  alt=""
+                />
+              </div>
+              <div class="eShop_textImg_box5 eShop_textImg_box">
+                <img
+                  class="hidden_text_img5"
+                  src="img/ds_eshop_text_img5.png"
+                  alt=""
+                />
+              </div>
+              <div class="eShop_chaImg_box">
+                <img class="hiddenImg1" src="img/5_cute_ball.png" alt="" />
+                <img class="hiddenImg2" src="img/5_cute_merci.png" alt="" />
+                <img class="hiddenImg3" src="img/5_cute_moira.png" alt="" />
+                <img class="hiddenImg4" src="img/5_cute_tracer.png" alt="" />
+                <img class="hiddenImg5" src="img/5_cute_zenyata.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 바텀 이미지 시작 -->
+        <div class="inner_wrap">
+          <section class="bottom_img_box">
+            <div class="cha_img_box">
+              <img src="img/ds_bottom_img_cha.png" alt="" />
+            </div>
+            <p class="bottom_img_text">
+              미래는 쟁취할 가치가 있습니다.<br />
+              함께하세요!
+            </p>
+            <div class="bottom_img_btn"><a href="#">지금 플레이</a></div>
+          </section>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer">
+        <!-- <div class="footer_bg_box">
+          <img src="img/ds_footer_footerbgi.png" alt="" />
+        </div> -->
+        <!-- <div class="footer_blank"></div> -->
+        <div class="footer_top_box">
+          <div class="footer_left_box">
+            <div class="footer_top_img">
+              <img src="img/ds_footer_blizzard_logo.png" alt="" />
+            </div>
+            <div class="footer_top_text_fnb">
+              <p>
+                ©2024 Blizzard Entertainment, Inc<br />
+                여기서 언급된 다른 모든 상표는 각 소유권자들의 자산입니다.
+              </p>
+              <ul class="fnb">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">법률 관련 문서</a></li>
+                <li><a href="#">이용 약관</a></li>
+                <li><a href="#">쿠키정보 처리 방침</a></li>
+                <li><a href="#">쿠키설정</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right_box">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_twitter_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Facebook_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_reddit_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Instagram_logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ds_footer_Youtube_logo.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <address class="address">
+          <small>
+            블리자드 엔터테인먼트 유한 회사<br />
+            주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br />
+            대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일:
+            <a href="#">websupport@blizzard.co.kr</a><br />
+            <a href="#">사업자 등록 번호: 211-87-49910</a> | 통신 판매업 신고
+            번호: 강남-6017호 | 사업자정보확인<br />
+            대표이사: 매리 아그네스 케틀러 | 개인정보 보호책임자: 이강호
+          </small>
+        </address>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/map2.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/reinHardt.js"></script>
+    <script src="js/nav_menu.js"></script>
+    <script src="js/eShop.js"></script>
+    <script src="js/webtoon.js"></script>
+    <script src="js/bottom_img.js"></script>
+  </body>
+</html>

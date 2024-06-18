@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "빅누들";
+        src: url(font/big_noodle_titling.ttf);
+      }
+
+      @font-face {
+        font-family: "오블리크";
+        src: url(font/big_noodle_titling_oblique.ttf);
+      }
+      @font-face {
+        font-family: "코버워치";
+        src: url(font/koverwatch.ttf);
+      }
+    </style>
+    <link rel="stylesheet" href="css/eShop.css" />
+  </head>
+  <body>
+    <article class="eShop">
+      <div class="bg_box">
+        <img src="img/ds_eShop_fixedBgi.jpg" alt="" />
+      </div>
+      <div class="top_img">
+        <img src="img/ds_eShop_rainbow.png" alt="" />
+      </div>
+
+      <div class="eShop_content">
+        <div class="eShop_content_box">
+          <div class="eShop_left_box">
+            <div class="eShop_left_img">
+              <img src="img/ds_eShop_poster.jpg" alt="" />
+            </div>
+            <div class="eShop_left_text">
+              <p>오버워치2</p>
+              <p>패키지 버전/다운로드 버전</p>
+              <p>
+                발매일 : 2024. 05. 21 (화)<br />
+                희망소비자가격 : 64,800원
+              </p>
+              <div class="eShop_all_img">
+                <img src="img/ds_eShop_allUser.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="eShop_right_box">
+            <div class="eShop_right_btn">
+              <a href="#">상품 정보 바로가기</a>
+            </div>
+            <div class="eShop_play_text">
+              <p>▶ 플레이 인원수 컨트롤러</p>
+            </div>
+            <div class="eShop_online">
+              <div class="eShop_top">
+                <img src="img/ds_eShop_product_online.png" alt="" />
+              </div>
+              <div class="eShop_bottom">
+                <p>
+                  온라인 플레이를 이용하기 위해서는 「Nintendo Switch Online」의
+                  가입이 필요합니다(유료)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eShop_bottom_content">
+          <div class="eShop_bottom_img_box">
+            <div class="eShop_bottom_left_box">
+              <p class="OLED_model_text1">NINTENDO SWICH (OLED 모델)</p>
+              <p class="OLED_model_text2">
+                NINTENDO SWICH<br />
+                (OLED 모델)
+              </p>
+              <p>오버워치2</p>
+              <p>2024. 05. 21 (화) 발매</p>
+            </div>
+            <div class="eShop_bottom_right_box">
+              <img src="img/ds_eShop_nintendo.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="eShop_cuteImg_Box">
+          <div class="eShop_textImg_box1 eShop_textImg_box">
+            <img
+              class="hidden_text_img1"
+              src="img/ds_eshop_text_img1.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img2"
+              src="img/ds_eshop_text_img2.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img3"
+              src="img/ds_eshop_text_img3.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img4"
+              src="img/ds_eshop_text_img4.png"
+              alt=""
+            />
+          </div>
+          <div class="eShop_textImg_box2 eShop_textImg_box">
+            <img
+              class="hidden_text_img1"
+              src="img/ds_eshop_text_img1.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img2"
+              src="img/ds_eshop_text_img2.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img3"
+              src="img/ds_eshop_text_img3.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img4"
+              src="img/ds_eshop_text_img4.png"
+              alt=""
+            />
+          </div>
+          <div class="eShop_textImg_box3 eShop_textImg_box">
+            <img
+              class="hidden_text_img1"
+              src="img/ds_eshop_text_img1.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img2"
+              src="img/ds_eshop_text_img2.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img3"
+              src="img/ds_eshop_text_img3.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img4"
+              src="img/ds_eshop_text_img4.png"
+              alt=""
+            />
+          </div>
+          <div class="eShop_textImg_box4 eShop_textImg_box">
+            <img
+              class="hidden_text_img1"
+              src="img/ds_eshop_text_img1.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img2"
+              src="img/ds_eshop_text_img2.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img3"
+              src="img/ds_eshop_text_img3.png"
+              alt=""
+            />
+            <img
+              class="hidden_text_img4"
+              src="img/ds_eshop_text_img4.png"
+              alt=""
+            />
+          </div>
+          <div class="eShop_textImg_box5 eShop_textImg_box">
+            <img
+              class="hidden_text_img5"
+              src="img/ds_eshop_text_img5.png"
+              alt=""
+            />
+          </div>
+          <div class="eShop_chaImg_box">
+            <img class="hiddenImg1" src="img/5_cute_ball.png" alt="" />
+            <img class="hiddenImg2" src="img/5_cute_merci.png" alt="" />
+            <img class="hiddenImg3" src="img/5_cute_moira.png" alt="" />
+            <img class="hiddenImg4" src="img/5_cute_tracer.png" alt="" />
+            <img class="hiddenImg5" src="img/5_cute_zenyata.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="js/eShop.js"></script>
+  </body>
+</html>
