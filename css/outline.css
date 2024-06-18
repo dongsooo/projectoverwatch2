@@ -1,0 +1,1177 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+video {
+  vertical-align: top;
+}
+
+/* custom */
+
+.wrap {
+  overflow: hidden;
+}
+
+.top-bar-wrap {
+  max-width: 100%;
+  background-color: white;
+  height: 46px;
+}
+
+.logo {
+  position: relative;
+  width: 102px;
+  height: 46px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.logo > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.outline {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video_box {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.video_box > video {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overwatch_logo {
+  position: absolute;
+  width: 480px;
+  height: 50vh;
+  /* background-color: red; */
+  top: 0%;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 0;
+}
+
+.overwatch_logo > img {
+  position: absolute;
+  top: 26%;
+  width: 480px;
+  height: 51px;
+}
+
+.video_text_box {
+  position: absolute;
+
+  width: 767px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: blue; */
+
+  text-align: center;
+  font-family: "코버워치";
+  color: white;
+  /* font-size: 2vw; */
+}
+
+.video_text_box > h3 {
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  margin-bottom: 0.6em;
+}
+
+.video_text_box > p {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+}
+
+.video_btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  /* height: 3%; */
+  padding: 1em 0;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.video_btn:hover {
+  background-color: orange;
+}
+
+.video_btn > a {
+  display: block;
+  font-family: "코버워치";
+  color: white;
+  font-size: 1em;
+
+  z-index: 20;
+}
+
+.outline {
+  max-width: 100%;
+  position: relative;
+}
+
+.outline_content_imgBox {
+  position: relative;
+}
+.outline_content_imgBox > img:nth-child(1) {
+  position: absolute;
+  top: -18%;
+  width: 100%;
+
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.outline_content_imgBox > img:nth-child(2) {
+  position: relative;
+  z-index: 0;
+}
+
+.outline_content_imgBox > img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.outline_content_box {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  margin: 0 auto;
+}
+
+.outline_content_intro {
+  position: absolute;
+  max-width: 1280px;
+  width: 100%;
+
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro_left_box {
+  position: absolute;
+
+  left: 5%;
+  top: 40%;
+  transform: translateY(-50%);
+  height: auto;
+
+  font-family: "코버워치";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.intro_left_box > h4 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+.intro_left_box > p {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  /* margin-bottom: 1em; */
+}
+
+.intro_left_box_text1 {
+  display: none;
+}
+
+.intro_left_box_text2 {
+  display: block;
+}
+
+.intro_right_box {
+  position: absolute;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  right: 5%;
+  top: 40%;
+  width: 50%;
+  text-align: end;
+}
+
+.intro_right_box > img {
+  border: 1vw solid white;
+  border-radius: 0 6vw 0 6vw;
+  max-width: 100%;
+  width: 80%;
+}
+
+.game_characteristic {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+
+.game_characteristic_bg_box {
+  position: relative;
+
+  width: 100%;
+  height: auto; /* 이미지와 같은 높이를 유지합니다. */
+}
+
+.game_characteristic_bg_box > img {
+  position: relative;
+  max-width: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.game_characteristic_bg_box > img:last-child {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  display: none;
+}
+
+.game_characteristic_text1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  /* width: 1280px; */
+  padding: 0 2em;
+  font-family: "코버워치";
+  color: white;
+
+  transform: translateX(-50%);
+}
+
+.game_characteristic_text1 > h4 {
+  font-size: 3.5em;
+  margin-bottom: 1.5em;
+
+  position: absolute;
+  top: 5%;
+  left: 7%;
+}
+
+.game_characteristic_text1 > p {
+  line-height: 1.2em;
+  font-size: 1.5em;
+  margin-bottom: 5em;
+
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.game_characteristic_text1 > p:nth-child(2) {
+  top: 10%;
+  left: 7%;
+}
+
+.game_characteristic_icon {
+  position: absolute;
+
+  top: 15%;
+  left: 7%;
+  max-width: 1280px;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: start;
+}
+
+.game_characteristic_icon > li {
+  width: auto;
+
+  height: 55px;
+  margin: 0 1em;
+
+  position: relative;
+}
+
+.game_characteristic_icon > li > img {
+  max-width: 100%;
+  min-width: 50%;
+}
+
+.game_characteristic_icon > li > p {
+  min-width: 80px;
+  font-size: 1em;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  line-height: 1.1em;
+}
+
+.game_characteristic_icon > li:nth-child(2) > p {
+  width: 120%;
+}
+
+.game_characteristic_icon > li:nth-child(3) > p {
+  width: 123%;
+}
+
+.game_characteristic_text1 > h5 {
+  font-size: 3.5em;
+
+  left: 7%;
+  top: 24.5%;
+  position: absolute;
+  z-index: 0;
+}
+
+.game_characteristic_text1 > .text {
+  font-size: 1.5em;
+  position: absolute;
+  left: 7%;
+  top: 29.5%;
+  z-index: 0;
+}
+
+.now_play_box {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+.now_play_bg {
+  position: relative;
+  z-index: 1;
+}
+.now_play_bg > img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.now_play_line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  top: -23%;
+  width: 100%;
+  z-index: 3;
+}
+
+.now_play_line > img {
+  max-width: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.now_play_content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: 3;
+}
+
+.now_img_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+
+.now_play_img_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  border: 1vw solid rgb(214, 214, 214);
+  border-radius: 0 6vw 0 6vw;
+  justify-content: space-between;
+}
+
+.now_play_left_box {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  /* transform: translateY(-50%); */
+  left: 0%;
+  top: 0%;
+}
+
+.now_play_left_box > img {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  width: 50%;
+}
+
+.now_play_right_box {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  /* transform: translateY(-50%); */
+  right: 0%;
+  top: 0%;
+}
+
+.now_play_right_box > img {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  width: 50%;
+}
+
+.now_play_btn {
+  width: 250px;
+  /* height: 20px; */
+  background-color: orangered;
+  font-family: "코버워치";
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em 0;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.now_play_btn:hover {
+  background-color: orange;
+}
+
+.go_map_box {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.go_map_bg {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.go_map_bg > img {
+  max-width: 100%;
+  width: 110%;
+}
+
+.go_map_text {
+  position: absolute;
+  font-family: "코버워치";
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw;
+  z-index: 3;
+}
+
+.go_map_btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "코버워치";
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  width: 250px;
+  /* height: 50px; */
+  padding: 1em 0;
+  background-color: orangered;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  z-index: 3;
+}
+
+.go_map_btn:hover {
+  background-color: orange;
+}
+
+@media all and (max-width: 767px) {
+  .video_box {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .video_box > video {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .overwatch_logo {
+    top: 0%;
+    height: 20vh;
+    width: 480px;
+  }
+
+  .overwatch_logo > img {
+    /* height: 202px; */
+    transform: scale(0.8);
+    width: 480px;
+    top: 50%;
+  }
+
+  .video_text_box {
+    max-width: 767px;
+    width: 767px;
+    height: 202px;
+    top: 28%;
+    /* background-color: red; */
+  }
+
+  .video_text_box > h3 {
+    top: 30%;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .video_text_box > p {
+    width: 100%;
+    top: 52%;
+    font-size: 1em;
+  }
+
+  .video_btn {
+    width: 150px;
+    top: 90%;
+    padding: 0.5em 0;
+  }
+
+  .video_btn > a {
+    font-size: 1em;
+  }
+
+  .outline_content_imgBox > img:nth-child(1) {
+    z-index: -1;
+  }
+
+  .intro_left_box {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+    text-align: center;
+    position: absolute;
+  }
+
+  .intro_left_box > h4 {
+    text-align: end;
+    font-size: 2em;
+    /* width: 100%; */
+    /* background-color: rgba(125, 194, 246, 0.356); */
+    position: absolute;
+    left: -2%;
+    top: 8%;
+    width: 50%;
+    padding: 0.3em;
+  }
+
+  .intro_left_box > .intro_left_box_text1 {
+    text-align: start;
+    position: absolute;
+    top: 50%;
+    /* background-color: rgba(42, 104, 190, 0.356); */
+    font-size: 1em;
+    display: block;
+    padding: 0.5em;
+    right: -2%;
+    width: 50%;
+  }
+
+  .intro_left_box_text2 {
+    display: none;
+  }
+
+  .intro_right_box {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    text-align: center;
+    filter: brightness(0.7);
+  }
+
+  .intro_right_box > img {
+    border: none;
+    border-radius: 0 0 0 0;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .game_characteristic_bg_box > img:last-child {
+    display: block;
+    filter: brightness(0.6);
+  }
+  .game_characteristic_text1 {
+    position: absolute;
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .game_characteristic_text1 > h4 {
+    font-size: 2.5em;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.5%;
+  }
+
+  .game_characteristic_text1 > p {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    top: 9%;
+    line-height: 1.4em;
+  }
+
+  .game_characteristic_text1 > p:nth-child(2) {
+    left: 50%;
+    top: 8.5%;
+    transform: translateX(-50%);
+  }
+
+  .game_characteristic_icon {
+    max-width: 360px;
+    height: 50px;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .game_characteristic_icon > li {
+    width: auto;
+    left: 0;
+
+    top: 0;
+    width: 45px;
+    height: 55px;
+    margin: 0 0.5em;
+
+    position: relative;
+  }
+
+  .game_characteristic_icon > li > img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .game_characteristic_icon > li > p {
+    font-size: 0.5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.5em;
+  }
+
+  .game_characteristic_text1 > h5 {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 1em; */
+    font-size: 2.5em;
+    /* margin-bottom: 0.2em; */
+
+    top: 26%;
+    position: absolute;
+    z-index: 6;
+  }
+
+  .game_characteristic_text1 > .text {
+    font-size: 1em;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  .now_play_box {
+    max-width: 767px;
+  }
+
+  .now_play_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .now_play_bg > img {
+    max-width: 200%;
+    width: 200%;
+  }
+
+  .now_play_line {
+    top: -10%;
+    /* z-index: 4; */
+  }
+
+  .now_play_line > img {
+    width: 100%;
+  }
+
+  .now_play_content {
+    position: absolute;
+  }
+
+  .now_play_img_box {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    height: 130%;
+    margin: 0 auto;
+
+    text-align: center; /* 가운데 정렬 추가 */
+  }
+
+  .now_play_left_box {
+    max-width: 360px;
+    position: absolute;
+
+    text-align: center;
+    top: 0%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  .now_play_left_box > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .now_play_right_box {
+    max-width: 360px;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .now_play_right_box > img {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .now_play_btn {
+    position: relative;
+    top: 90%;
+    width: 150px;
+    /* top: 16%; */
+    padding: 0.5em 0;
+    font-size: 1em;
+  }
+
+  .go_map_text {
+    font-size: 1em;
+  }
+
+  .go_map_btn {
+    width: 150px;
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+
+  .go_map_btn > a {
+    display: block;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .overwatch_logo {
+    max-width: 480px;
+    height: 20vh;
+    /* background-color: red; */
+  }
+
+  .overwatch_logo > img {
+    /* height: 202px; */
+    transform: scale(0.6);
+    width: 480px;
+    top: 70%;
+  }
+
+  .video_text_box {
+    max-width: 480px;
+    width: 480px;
+    height: 202px;
+    top: 20%;
+  }
+
+  .video_text_box > h3 {
+    top: 45%;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .video_text_box > p {
+    width: 100%;
+    top: 65%;
+    font-size: 1em;
+  }
+
+  .video_btn {
+    width: 100px;
+    top: 90%;
+    padding: 0.5em 0;
+  }
+
+  .video_btn > a {
+    font-size: 0.5em;
+  }
+
+  .outline_content_imgBox > img:nth-child(1) {
+    z-index: -1;
+  }
+
+  .intro_left_box {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+    text-align: center;
+    position: absolute;
+  }
+
+  .intro_left_box > h4 {
+    text-align: end;
+    font-size: 1em;
+    /* width: 100%; */
+    /* background-color: rgba(125, 194, 246, 0.356); */
+    position: absolute;
+    left: -10%;
+    top: 15%;
+    width: 50%;
+    padding: 0.3em;
+  }
+
+  .intro_left_box > .intro_left_box_text1 {
+    text-align: start;
+    position: absolute;
+    top: 45%;
+    /* background-color: rgba(42, 104, 190, 0.356); */
+    font-size: 0.7em;
+    display: block;
+    padding: 0.5em;
+    right: -2%;
+    width: 50%;
+  }
+
+  .intro_left_box_text2 {
+    display: none;
+  }
+
+  .intro_right_box {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    text-align: center;
+    filter: brightness(0.7);
+  }
+
+  .intro_right_box > img {
+    border: none;
+    border-radius: 0 0 0 0;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .game_characteristic_bg_box > img:last-child {
+    filter: brightness(0.6);
+    display: block;
+  }
+  .game_characteristic_text1 {
+    position: absolute;
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .game_characteristic_text1 > h4 {
+    font-size: 1em;
+    /* margin-bottom: 0.2em; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.5%;
+  }
+
+  .game_characteristic_text1 > p {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    top: 6.5%;
+    line-height: 1.4em;
+  }
+
+  .game_characteristic_text1 > p:nth-child(2) {
+    top: 6%;
+  }
+
+  .game_characteristic_icon {
+    max-width: 360px;
+    height: 50px;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    top: 11%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .game_characteristic_icon > li {
+    width: auto;
+    left: 0;
+
+    top: 0;
+    width: 40px;
+    height: 55px;
+    margin: 0 0.5em;
+
+    position: relative;
+  }
+
+  .game_characteristic_icon > li > img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .game_characteristic_icon > li > p {
+    font-size: 0.5em;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.5em;
+  }
+
+  .game_characteristic_text1 > h5 {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 1em; */
+    font-size: 1em;
+    /* margin-bottom: 0.2em; */
+
+    top: 26%;
+    position: absolute;
+    z-index: 6;
+  }
+
+  .game_characteristic_text1 > .text {
+    font-size: 0.7em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  .now_play_box {
+    max-width: 767px;
+  }
+
+  .now_play_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .now_play_bg > img {
+    max-width: 200%;
+    width: 200%;
+  }
+
+  .now_play_line {
+    top: -10%;
+    z-index: 4;
+  }
+
+  .now_play_line > img {
+    width: 100%;
+  }
+
+  .now_play_content {
+    position: absolute;
+  }
+
+  .now_play_img_box {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    text-align: center; /* 가운데 정렬 추가 */
+  }
+
+  .now_play_left_box {
+    max-width: 480px;
+    position: absolute;
+
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .now_play_left_box > img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .now_play_right_box {
+    max-width: 480px;
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .now_play_right_box > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .now_play_btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    width: 100px;
+    /* top: 16%; */
+    padding: 0.5em 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .now_play_btn > a {
+    font-size: 0.5em;
+  }
+
+  .go_map_text {
+    font-size: 1em;
+  }
+
+  .go_map_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    font-size: 0.5em;
+    top: 70%;
+  }
+
+  .go_map_btn > a {
+    display: block;
+    padding: 0.5em 0;
+  }
+}

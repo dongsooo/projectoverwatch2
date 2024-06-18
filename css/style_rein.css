@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+/*************************전체************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+video {
+  vertical-align: top;
+}
+
+/********************art1**********************/
+
+body {
+  overflow-x: hidden;
+}
+
+.art1 {
+  background-image: url(../img/R_main.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.art1 > h1 {
+  font-size: 8em;
+  color: #ffff5d;
+  text-shadow: 10px 10px black;
+  transform: rotate(-12deg);
+  font-family: "bigNoodles", sans-serif;
+  position: absolute;
+  top: 0%;
+  left: 7%;
+  letter-spacing: 0.08em;
+  z-index: 1;
+}
+
+.art1 > h2 {
+  font-size: 10em;
+  color: #ffff5d;
+  text-shadow: 10px 10px black;
+  transform: rotate(-12deg);
+  font-family: "bigNoodles", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  letter-spacing: 0.08em;
+  z-index: 1;
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 38%;
+  left: 15%;
+  overflow: hidden;
+  max-width: 280px;
+  max-height: 280px;
+  min-height: 250px;
+  min-width: 250px;
+  filter: drop-shadow(0px 0px 30px #000000);
+}
+
+.circle > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+.art1 > img {
+  display: none;
+}
+
+.text1_1 > h4 {
+  display: none;
+  position: absolute;
+  font-family: "코버워치", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  top: 65%;
+  left: 40%;
+  width: 540px;
+  letter-spacing: 0.18em;
+  text-shadow: 1px 1px 4px white;
+}
+
+.text1 h4 {
+  position: absolute;
+  font-family: "코버워치", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  top: 73%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  letter-spacing: 0.18em;
+  text-shadow: 1px 1px 4px white;
+}
+
+.icon {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 79%;
+  line-height: 5em;
+  filter: drop-shadow(1px 1px 3px #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 270px;
+}
+
+.icon > li {
+  position: relative;
+  display: flex;
+  margin: 1em 0;
+}
+
+.icon > li > img {
+  width: 5%;
+}
+
+.icon p {
+  color: white;
+  font-family: "코버워치", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  text-shadow: 1px 1px 4px black;
+  position: relative;
+  top: 0%;
+  left: 3%;
+}
+
+/*****************art2*************************/
+.art2 {
+  position: relative;
+  height: 100vh;
+}
+
+.skill_vdo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill_vdo > ul {
+  height: auto;
+  display: flex;
+  width: 500%;
+  position: relative;
+  left: 0;
+}
+
+.skill_vdo > ul > li {
+  position: relative;
+  width: 20%;
+  overflow: hidden;
+}
+
+.skill_vdo > ul > li > video {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill_icon h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16%;
+  color: white;
+  font-family: "코버워치", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 4px black;
+}
+
+.btn_ {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "코버워치", sans-serif;
+  text-shadow: 1px 1px 4px black;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.btn_ > li {
+  padding: 20px;
+}
+
+.btn_ > li:last-child {
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill_icon img {
+  width: 90px;
+  filter: drop-shadow(1px 1px 3px #000000);
+}
+
+.skill_icon img:hover {
+  filter: drop-shadow(3px 3px 10px red);
+}
+
+/********************art3******************/
+.art3 {
+  width: 100%;
+  position: relative;
+  background-image: url(../img/R_main2.jpeg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: red;
+}
+
+.art3 > ul {
+  width: 100%;
+  height: 2000px;
+  position: relative;
+}
+
+.art3 h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1%;
+  color: #000000;
+  font-family: "코버워치", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.skin_box1 {
+  width: 320px;
+  height: 320px;
+  max-height: 420px;
+  max-width: 420px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 50%;
+  top: 9%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.skin_box1 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 10;
+}
+
+.skin1 {
+  position: absolute;
+  right: 1000px;
+  top: -5%;
+}
+
+.skin_text1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: 6;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-family: "코버워치", sans-serif;
+  font-size: 2.4em;
+  text-shadow: 1px 1px 4px black;
+}
+
+.skin_box2 {
+  width: 320px;
+  height: 320px;
+  max-height: 420px;
+  max-width: 420px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.skin_box2 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.skin2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(22%) scale(0.68);
+  top: 15%;
+  display: none;
+}
+
+.skin_text2 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-family: "코버워치", sans-serif;
+  font-size: 2.4em;
+  text-shadow: 1px 1px 4px black;
+  z-index: 6;
+}
+
+.skin_box3 {
+  width: 320px;
+  height: 320px;
+  max-height: 420px;
+  max-width: 420px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.skin_box3 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 10;
+}
+
+.skin3 {
+  position: absolute;
+  right: 1000px;
+  top: 45%;
+}
+
+.skin_text3 {
+  position: absolute;
+  top: 71%;
+  z-index: 6;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-family: "코버워치", sans-serif;
+  font-size: 2.4em;
+  text-shadow: 1px 1px 4px black;
+}
+
+.skin_box4 {
+  width: 320px;
+  height: 320px;
+  max-height: 420px;
+  max-width: 420px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 50%;
+  /*    top: 82%;*/
+  bottom: 6%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.skin_box4 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.skin4 {
+  position: absolute;
+  top: 55%;
+  position: absolute;
+  left: 40%;
+  transform: translateX(22%) scale(0.68);
+  display: none;
+}
+
+.skin_text4 {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-family: "코버워치", sans-serif;
+  font-size: 2.4em;
+  text-shadow: 1px 1px 4px black;
+  z-index: 6;
+}
+
+@media all and (min-width: 767px) {
+  .art1 > h1 {
+    display: none;
+  }
+
+  .art1 > h2 {
+    display: block;
+  }
+
+  .btn_ {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "코버워치", sans-serif;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+  }
+
+  .btn_ > li {
+    padding: 20px;
+  }
+
+  .btn_ > li:last-child {
+    position: static;
+    transform: translateX(0);
+  }
+
+  .art3 > ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .art3 > ul {
+    height: 2000px;
+  }
+}
+
+@media all and (min-width: 929px) {
+  .art1 > h1 {
+    display: none;
+  }
+
+  .art1 > h2 {
+    display: block;
+  }
+
+  .text1 > h4 {
+    display: none;
+  }
+
+  .text1_1 > h4 {
+    display: block;
+  }
+
+  .icon {
+    top: 70%;
+    right: 50%;
+  }
+
+  .skin2,
+  .skin4 {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1599px) {
+  .art1 > img {
+    filter: drop-shadow(15px 15px 5px #0f358d);
+    transform-origin: bottom right;
+    transition: all 2s;
+    display: block;
+  }
+
+  .art1 > img:hover {
+    transform: rotate(-30deg);
+  }
+
+  .hammer {
+    background-size: cover;
+    animation: hammer 1s ease 4 alternate;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    height: 60%;
+  }
+
+  @keyframes hammer {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(-30deg);
+    }
+
+    .text1 > h3 {
+      display: block;
+    }
+  }
+
+  .lightning {
+    width: 1000px;
+    height: 1000px;
+    background-image: url(../img/R_light.png);
+    background-size: cover;
+    animation: lightning 0.7s ease infinite alternate;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    height: 60%;
+    z-index: 7;
+    display: block;
+  }
+
+  @keyframes lightning {
+    0% {
+      opacity: 1;
+      transform: scale(0.8);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+video {
+  vertical-align: top;
+}
+
+/* custom */
+.wrap {
+  max-width: 100%;
+  height: 100%;
+}
+
+.map {
+  max-width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+.map_bg_box {
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; */
+  background-image: url(../img/ds_map_zaria.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map_bg_box > img {
+  max-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.map_waveImg_box {
+  position: relative;
+  width: 100%;
+  top: -6%;
+}
+
+.map_waveImg_box > img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.map_content {
+  max-width: 100%;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.map_text {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.map_text > h3 {
+  text-align: center;
+  font-family: "코버워치";
+  font-size: 4em;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.map_text > p {
+  text-align: center;
+  font-family: "코버워치";
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 4em;
+  line-height: 1.2em;
+}
+
+.map_blank {
+  width: 100%;
+  height: 200px;
+}
+
+.map_content_box {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  /* overflow: hidden; */
+  /* height: 700px; */
+}
+
+.map_content_box > ul {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  left: -200%;
+  /* gap: 10em; */
+}
+
+.map_content_box > ul > li {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  padding: 0 5em;
+}
+
+.map_content_box > ul > li > video {
+  left: 50%;
+  transform: translateX(-50%);
+
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  border: 17px solid white;
+  border-radius: 100px 0 100px 0;
+  /* width: 80%; */
+}
+
+.map_content_box > ul > li > p {
+  font-family: "코버워치";
+  color: white;
+  font-size: 3em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.left_btn,
+.right_btn {
+  position: absolute;
+  width: 64px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left_btn {
+  left: 0;
+}
+
+.left_btn > img {
+  width: 100%;
+}
+
+.right_btn {
+  right: 0;
+}
+
+.right_btn > img {
+  width: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .map_content {
+    max-width: 767px;
+  }
+
+  .map_text > h3 {
+    font-size: 2em;
+  }
+
+  .map_text > p {
+    font-size: 1em;
+  }
+  .map_content_box > ul > li > video {
+    width: 110%;
+    border: 13px solid white;
+    border-radius: 70px 0 70px 0;
+  }
+
+  .map_content_box {
+    max-width: 767px;
+  }
+
+  .left_btn,
+  .right_btn {
+    height: 48px;
+    top: 100%;
+    transform: translate(0);
+  }
+}
+
+@media all and (max-width: 420px) {
+  .map_content {
+    max-width: 420px;
+  }
+  .map_text > h3 {
+    font-size: 1em;
+  }
+
+  .map_text > p {
+    font-size: 0.7em;
+  }
+
+  .map_content_box {
+    max-width: 420px;
+  }
+
+  .map_content_box > ul > li > video {
+    width: 150%;
+    border: 13px solid white;
+    border-radius: 40px 0 30px 0;
+  }
+  .map_content_box > ul > li > p {
+    font-size: 1.2em;
+  }
+
+  .left_btn,
+  .right_btn {
+    width: 25px;
+    height: 19px;
+  }
+
+  .left_btn {
+    left: 5%;
+  }
+
+  .right_btn {
+    right: 5%;
+  }
+
+  .map_blank {
+    height: 100px;
+  }
+}

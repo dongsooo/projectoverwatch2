@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* custom */
+
+.eShop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg_box > img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.top_img {
+  /* position: absolute; */
+  top: 0;
+  width: 100%;
+  height: 30%;
+}
+
+.top_img > img {
+  width: 100%;
+  max-width: 100%;
+  /* min-width: 100%; */
+  height: 100%;
+}
+
+.eShop_content {
+  width: 100%;
+  height: 100%;
+}
+
+.eShop_content_box {
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 100%;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.eShop_left_box {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5em;
+}
+
+.eShop_left_img {
+  min-width: 225px;
+  width: 30%;
+}
+
+.eShop_left_img > img {
+  max-width: 100%;
+  width: 100%;
+  min-width: 150px; /* 최소 너비 */
+  min-height: 150px; /* 최소 높이 */
+}
+
+.eShop_left_text {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.eShop_left_text > p {
+  font-family: "코버워치";
+  color: white;
+}
+
+.eShop_left_text > p:nth-child(1) {
+  font-size: 2.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+}
+
+.eShop_left_text > p:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border: 2px solid white;
+  width: 95%;
+  height: 40px;
+  text-align: center;
+}
+
+.eShop_left_text > p:nth-child(3) {
+  font-size: 1.4em;
+  line-height: 1.8em;
+  margin-top: 1.2em;
+}
+
+.eShop_all_img {
+  margin-left: 0;
+
+  width: 100%;
+  text-align: end;
+}
+
+.eShop_all_img > img {
+  /* max-width: 100%; */
+  min-width: 90px;
+  width: 20%;
+}
+
+.eShop_right_box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eShop_right_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(64, 64, 64);
+  padding: 2em 0;
+  width: 80%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eShop_right_btn:hover {
+  background-color: orange;
+}
+
+.eShop_right_btn > a {
+  font-family: "코버워치";
+  font-size: 1.5em;
+  color: white;
+
+  display: block;
+
+  /* padding: 1.4em 4em; */
+}
+
+.eShop_play_text {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2.5em;
+}
+
+.eShop_play_text > p {
+  font-family: "코버워치";
+  color: white;
+  font-size: 1.2em;
+}
+
+.eShop_online {
+  width: 80%;
+  /* height: 100%; */
+  background: red;
+}
+
+.eShop_top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 50%; */
+  text-align: center;
+  /* padding-top: 0.6em; */
+}
+
+.eShop_top > img {
+  padding: 0.5em 0;
+  max-width: 100%;
+  width: 40%;
+}
+
+.eShop_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 50%; */
+  padding: 1em 0;
+  background-color: white;
+  text-align: start;
+}
+
+.eShop_bottom > p {
+  padding: 0 1em;
+  font-family: "코버워치";
+  /* font-size: 16px; */
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.eShop_bottom_img_box {
+  width: 100%;
+}
+
+.eShop_bottom_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 10em;
+  margin-bottom: 5em;
+  background-color: rgb(64, 64, 64);
+
+  padding: 0 0.5em;
+  border-radius: 3em;
+}
+
+.eShop_bottom_img_box {
+  width: 100%;
+  display: flex;
+}
+
+.eShop_bottom_left_box {
+  /* margin-top: 3em; */
+  width: 50%;
+}
+
+.eShop_bottom_left_box > p {
+  font-family: "코버워치";
+  color: white;
+  text-align: center;
+}
+
+.eShop_bottom_left_box > p:nth-child(1),
+.eShop_bottom_left_box > p:nth-child(2) {
+  margin-top: 1em;
+  font-size: 1.6em;
+}
+
+.eShop_bottom_left_box > p:nth-child(3) {
+  font-size: 3em;
+  margin: 0.6em 0;
+}
+
+.eShop_bottom_left_box > p:nth-child(4) {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.OLED_model_text2 {
+  display: none;
+}
+
+.eShop_bottom_right_box {
+  /* margin-top: 3em; */
+  position: relative;
+  max-width: 40%;
+  /* min-width: 48%; */
+  width: 40%;
+  display: flex;
+  /* justify-content: end; */
+}
+
+.eShop_bottom_right_box > img {
+  position: absolute;
+  top: 0;
+  right: 7%;
+  /* max-width: 100%; */
+  height: 100%;
+  width: 90%;
+}
+
+.eShop_cuteImg_Box {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eShop_textImg_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eShop_textImg_box1 > img {
+  position: absolute;
+  left: 10%;
+  top: -32%;
+  display: block;
+}
+
+.eShop_textImg_box2 > img {
+  position: absolute;
+  left: 25%;
+  top: -32%;
+  display: block;
+}
+
+.eShop_textImg_box3 > img {
+  position: absolute;
+  left: 40%;
+  top: -32%;
+  display: block;
+}
+
+.eShop_textImg_box4 > img {
+  position: absolute;
+  left: 56%;
+  top: -32%;
+  display: block;
+}
+
+.eShop_textImg_box5 > img {
+  position: absolute;
+  left: 73%;
+  top: -32%;
+  display: block;
+}
+.hidden_text_img1,
+.hidden_text_img2,
+.hidden_text_img3,
+.hidden_text_img4,
+.hidden_text_img5 {
+  opacity: 0;
+}
+
+.eShop_chaImg_box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1em;
+}
+
+.eShop_chaImg_box > img {
+  display: block;
+
+  width: 15%;
+}
+
+.hiddenImg5 {
+  opacity: 0;
+}
+
+@media all and (max-width: 767px) {
+  .eShop_bottom_content {
+    max-width: 767px;
+    margin: 10em 1em 5em 1em;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .eShop_content_box {
+    /* max-width: 767px; */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eShop_left_box {
+    width: 100%;
+    padding-left: 0;
+
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .eShop_left_img {
+    margin: 1em 0;
+  }
+
+  .eShop_right_box {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .eShop_left_text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .eShop_left_text > p:nth-child(2) {
+    margin: 0 auto;
+  }
+
+  .eShop_all_img {
+    margin: 2em 0;
+  }
+
+  .OLED_model_text1 {
+    display: none;
+  }
+
+  .OLED_model_text2 {
+    display: block;
+  }
+
+  .eShop_cuteImg_Box {
+    max-width: 767px;
+  }
+
+  .eShop_textImg_box1 {
+  }
+
+  .eShop_textImg_box1 > img {
+    top: -30%;
+    left: 8.5%;
+    width: 20%;
+  }
+
+  .eShop_textImg_box2 > img {
+    top: -30%;
+    left: 24.5%;
+    width: 20%;
+  }
+  .eShop_textImg_box3 > img {
+    top: -30%;
+    left: 38.5%;
+    width: 20%;
+  }
+
+  .eShop_textImg_box4 > img {
+    top: -30%;
+    left: 54.5%;
+    width: 20%;
+  }
+
+  .eShop_textImg_box5 > img {
+    top: -40%;
+    left: 68.5%;
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .eShop_bottom_content {
+    margin: 5em 1em 3em 1em;
+  }
+
+  .eShop_bottom_left_box > p:nth-child(1),
+  .eShop_bottom_left_box > p:nth-child(2) {
+    margin-top: 1em;
+    font-size: 1em;
+  }
+
+  .eShop_bottom_left_box > p:nth-child(3) {
+    font-size: 1.3em;
+  }
+
+  .eShop_bottom_left_box > p:nth-child(4) {
+    font-size: 1em;
+  }
+}

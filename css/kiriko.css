@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+/*************************전체************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+video {
+  vertical-align: top;
+}
+
+/********************art1**********************/
+
+.art1 {
+  /*@@@@@본인 백그라운드 이미지 넣으세요@@@@@*/
+  background-image: url(../img/K_main2.jpg);
+  /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.art1 > h1 {
+  font-size: 18em;
+
+  /*@@@@본인 폰트 색넣으세요@@@@*/
+  color: #ffffff;
+  /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.9);
+
+  transform: rotate(-12deg);
+  font-family: "bigNoodles", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  letter-spacing: 0.08em;
+  z-index: 1;
+}
+
+.circle {
+  width: 28vw;
+  height: 28vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  overflow: hidden;
+  min-width: 350px;
+  min-height: 350px;
+  filter: drop-shadow(0px 0px 30px #00ffff);
+}
+
+.circle > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.text1 {
+  position: absolute;
+  font-family: "overWatch", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  left: 50%;
+  top: 50%;
+  letter-spacing: 0.18em;
+  text-shadow: 1px 1px 4px black;
+  padding: 20px;
+}
+
+.text1_2 {
+  display: none;
+}
+
+.text1 > h4 {
+  color: #fff;
+  font-weight: normal;
+}
+
+.text2 {
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  padding: 20px;
+}
+
+.text2 > li {
+  color: white;
+  font-family: "overWatch", sans-serif;
+  font-size: 1.5em;
+  line-height: 4em;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 4px black;
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  line-height: 6em;
+  filter: drop-shadow(1px 1px 3px #000000);
+  padding: 20px;
+}
+
+/*연서꺼*/
+
+.kunai {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(35deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(25deg);
+  }
+}
+
+.kunai img {
+  width: 200px;
+  position: absolute;
+  top: 15%;
+  left: 42%;
+  z-index: 2;
+  transform: rotate(30deg);
+  filter: drop-shadow(0px 0px 20px #000000);
+  animation: shake 3s ease-in-out infinite;
+}
+
+.flower {
+  animation: flower 1.5s ease;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 35%;
+  height: auto;
+  transform: scale(1.5);
+  filter: drop-shadow(0px 0px 5px #56ffe5);
+}
+
+@keyframes flower {
+  0% {
+    opacity: 1;
+    transform: translateY(-100%) scale(1.8);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0) scale(1.8);
+  }
+}
+
+/*****************art2*************************/
+.art2 {
+  position: relative;
+  height: 100vh;
+}
+
+.skill_vdo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill_vdo > ul {
+  display: flex;
+  width: 500%;
+  height: auto;
+  position: relative;
+  left: 0;
+}
+
+.skill_vdo > ul > li {
+  width: 20%;
+  overflow: hidden;
+}
+
+.skill_vdo video {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill_icon {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill_icon h3 {
+  text-align: center;
+  color: white;
+  font-family: "overWatch", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px 4px black;
+}
+
+.skill_icon > ul {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.skill_icon li {
+  filter: drop-shadow(1px 1px 3px #000000);
+}
+
+.skill_icon img {
+  width: 100px;
+}
+
+.skill_icon img:hover {
+  filter: drop-shadow(3px 3px 10px aqua);
+}
+
+/********************art3******************/
+.art3 {
+  width: 100%;
+  height: 3800px;
+  position: relative;
+  background-image: url(../img/K_main2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.skin_box1 {
+  width: 600px;
+  height: 600px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 32%;
+  top: 5%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 20px #0093ff);
+  margin: 0 auto;
+}
+
+.skin_box1 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.skin1 {
+  position: absolute;
+  right: 17%;
+  top: 2%;
+}
+
+.skin_text1 {
+  position: absolute;
+  top: 17%;
+  left: 63%;
+  color: white;
+  font-family: "overWatch", sans-serif;
+  font-size: 10em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.skin_box2 {
+  width: 600px;
+  height: 600px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 67%;
+  top: 29%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 20px #ffec86);
+}
+
+.skin_box2 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skin2 {
+  position: absolute;
+  right: 35%;
+  top: 23%;
+}
+
+.skin_text2 {
+  position: absolute;
+  top: 41%;
+  left: 17%;
+  color: #ffffff;
+  font-family: "overWatch", sans-serif;
+  font-size: 10em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.9);
+  z-index: 6;
+}
+
+.skin_box3 {
+  width: 600px;
+  height: 600px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 31%;
+  top: 51%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 20px #ff7171);
+}
+
+.skin_box3 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.skin3 {
+  position: absolute;
+  right: 10%;
+  top: 46%;
+}
+
+.skin_text3 {
+  position: absolute;
+  top: 63%;
+  left: 60%;
+  color: #ffffff;
+  font-family: "overWatch", sans-serif;
+  font-size: 10em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.skin_box4 {
+  width: 600px;
+  height: 600px;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  position: absolute;
+  left: 68%;
+  top: 75%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 6;
+  filter: drop-shadow(0px 0px 20px #a953ff);
+}
+
+.skin_box4 > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skin4 {
+  position: absolute;
+  right: 38%;
+  top: 71%;
+}
+
+.skin_text4 {
+  position: absolute;
+  top: 86%;
+  left: 10%;
+  color: #ffffff;
+  font-family: "overWatch", sans-serif;
+  font-size: 10em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(0, 0, 0, 0.9);
+  z-index: 6;
+}
+
+/************ 모바일 추가 ***************/
+@media all and (max-width: 767px) {
+  /***** 소개 ******/
+  .art1 > h1 {
+    font-size: 8em;
+    top: 3%;
+    left: 7%;
+  }
+
+  .kunai img {
+    width: 90px;
+    top: 13%;
+    left: 69%;
+  }
+
+  .flower {
+    display: none;
+  }
+
+  .circle {
+    top: 18%;
+    min-width: 300px;
+    min-height: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text1 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 15px;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%);
+    width: 90%;
+  }
+
+  .text1_1 {
+    display: none;
+  }
+
+  .text1_2 {
+    display: block;
+  }
+
+  .icon {
+    left: 0%;
+    top: 65%;
+    transform: scale(0.6);
+  }
+
+  .text2 {
+    left: 17%;
+    top: 71%;
+  }
+
+  .text2 > li {
+    font-size: 1.2em;
+    line-height: 3em;
+  }
+
+  /***** 기술 ******/
+
+  .skill_icon {
+    top: 10%;
+  }
+
+  .skill_icon > ul {
+    grid-template-columns: auto auto;
+  }
+
+  .skill_icon > ul > li:last-child {
+    grid-column: span 2;
+  }
+
+  /***** 스킨 *****/
+
+  /***** 스킨 이미지 *****/
+  .skin1,
+  .skin2,
+  .skin3,
+  .skin4 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /***** 스킨영상 *****/
+
+  .skin_box1,
+  .skin_box2,
+  .skin_box3,
+  .skin_box4 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    z-index: 0;
+  }
+
+  .skin_box1 {
+    top: 10%;
+  }
+
+  .skin_text1 {
+    width: 70px;
+    font-size: 5em;
+    top: 1%;
+    left: 11%;
+    padding: 20px;
+  }
+
+  .skin2 {
+    top: 25%;
+  }
+
+  .skin_box2 {
+    top: 32%;
+  }
+
+  .skin_text2 {
+    width: 70px;
+    font-size: 5em;
+    top: 25%;
+    left: 68%;
+  }
+
+  .skin3 {
+    top: 47%;
+  }
+
+  .skin_box3 {
+    top: 54%;
+  }
+
+  .skin_text3 {
+    width: 70px;
+    font-size: 5em;
+    top: 47%;
+  }
+
+  .skin4 {
+    top: 68%;
+  }
+
+  .skin_box4 {
+    top: 74%;
+  }
+
+  .skin_text4 {
+    width: 70px;
+    font-size: 5em;
+    top: 66%;
+    left: 68%;
+  }
+
+  .skin_box1 video,
+  .skin_box2 video,
+  .skin_box3 video,
+  .skin_box4 video {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+  }
+}

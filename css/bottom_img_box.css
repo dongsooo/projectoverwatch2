@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+video {
+  vertical-align: top;
+}
+
+/* custom */
+
+.inner_wrap {
+  overflow: hidden;
+  height: 80vh;
+}
+
+.bottom_img_box {
+  position: relative;
+
+  min-height: 100vh;
+  /* height: 80vh; */
+  background-image: url(../img/ds_bottom_img_BG.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cha_img_box {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  /* height: 100%; */
+  /* background-color: red; */
+}
+
+.cha_img_box > img {
+  top: 0;
+
+  width: 100%;
+
+  /* width: 1700px; */
+}
+
+.bottom_img_text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "코버워치";
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  z-index: 10;
+}
+
+.bottom_img_btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  /* height: 3%; */
+  padding: 1em 0;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.bottom_img_btn:hover {
+  background-color: orange;
+}
+
+.bottom_img_btn > a {
+  display: block;
+  font-family: "코버워치";
+  color: white;
+  font-size: 1em;
+
+  z-index: 20;
+}
+
+@media all and (max-width: 767px) {
+  .inner_wrap {
+    max-width: 767px;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .bottom_img_box {
+    max-width: 767px;
+    width: 100%;
+    height: 450px;
+    min-height: auto;
+  }
+
+  .cha_img_box {
+    position: relative;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cha_img_box > img {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 70%;
+    top: 27%;
+    /* bottom: 30%; */
+    left: 50%;
+  }
+
+  .bottom_img_text {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+  }
+
+  .bottom_img_btn {
+    width: 150px;
+    top: 45%;
+    padding: 0.5em 0;
+  }
+
+  .bottom_img_btn > a {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .bottom_img_btn {
+    width: 100px;
+    top: 30%;
+    padding: 0.5em 0;
+  }
+  .bottom_img_btn > a {
+    font-size: 0.5em;
+  }
+
+  .bottom_img_text {
+    font-size: 1em;
+  }
+}
