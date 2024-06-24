@@ -15,3 +15,11 @@ $(".popup_close_btn").click(function () {
   $(".game_characteristic_text1 > h5").show();
   $(".text").show();
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const videos = document.querySelectorAll("video");
+  videos.forEach((video) => {
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+  });
+});
