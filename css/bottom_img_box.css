@@ -165,4 +165,8 @@ video {
   .bottom_img_text {
     font-size: 1em;
   }
+
+  .cha_img_box > img {
+    width: 100%;
+  }
 }
